@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Lab Maya IPAS Kelas 6 SD - Ekosistem & Simbiosis Mutualisme</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-dark: #047857;
+      --secondary: #0284c7;
+      --accent: #f59e0b;
+      --danger: #ef4444;
+      --bg-main: #064e3b;
+      --card-bg: #065f46;
+      --text: #f8fafc;
+      --text-muted: #a7f3d0;
+      --border: #047857;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #022c22;
+      color: var(--text);
+    }
+
+    /* Aspect Ratio Wrapper (16:9 Responsive Container) */
+    .app-container {
+      width: 100vw;
+      height: 100vh;
+      max-width: 177.78vh; /* 16:9 ratio guarantee */
+      max-height: 56.25vw;
+      margin: auto;
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+      display: flex;
+      flex-direction: column;
+      background: #064e3b;
+      box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    }
+
+    /* Sound Controls Floating */
+    .sound-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 100;
+      background: rgba(4, 120, 87, 0.8);
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      backdrop-filter: blur(4px);
+    }
+
+    /* Header & Navigation Tabs */
+    header {
+      background: #065f46;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      height: 50px;
+      flex-shrink: 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 6px;
+      height: 100%;
+      align-items: flex-end;
+    }
+
+    .tab-btn {
+      background: #047857;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      border-bottom: none;
+      padding: 8px 14px;
+      border-radius: 8px 8px 0 0;
